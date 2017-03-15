@@ -1,3 +1,4 @@
+
 <?php
 echo "please SET values for MIN, MAX, and INCREMENT ".PHP_EOL;
 
@@ -15,8 +16,6 @@ if (isset($argv[1]) && isset($argv[2]) && isset($argv[3])){
 
 }
 
-
-//please enter 3 arguments, first = min, second = max, third = increment. 
 
 if (($argv) < 3){
 	echo "---> CONTINUE as prompted with a default increment of 1\n---> RESTART to enter 3 arguments, first = min, second = max, third = increment  ".PHP_EOL;
