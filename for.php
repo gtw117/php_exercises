@@ -24,11 +24,11 @@ if (($argv) < 3){
 //if input is not a number do this...
 do {
 	if(!is_numeric($min)){
-		fwrite(STDERR, "argument used for MIN is not a number, please use only numbers!".PHP_EOL);
+		fwrite(STDERR, "argument used for MIN is not a number, please enter a NUMBER for MIN!".PHP_EOL);
 		$min = trim(fgets(STDIN));
 	}
 	if(!is_numeric($max)){
-		fwrite(STDERR, "argument used for MAX is not a number, please use only numbers!".PHP_EOL);
+		fwrite(STDERR, "argument used for MAX is not a number, please enter a NUMBER for MAX!".PHP_EOL);
 		$max = trim(fgets(STDIN));
 	}
 	if(!is_numeric($increment)){
