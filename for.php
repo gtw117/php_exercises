@@ -1,16 +1,16 @@
 <?php
-echo "please ENTER 3 arguments, first = min, second = max, third = increment".PHP_EOL;
+echo "please SET values for MIN, MAX, and INCREMENT ".PHP_EOL;
 
 if (isset($argv[1]) && isset($argv[2]) && isset($argv[3])){
 	$min = $argv[1];
 	$max = $argv[2];
 	$increment = $argv[3];
 } else {
-	echo"please enter MIN:".PHP_EOL;
+	echo"please enter MIN:";
 	$min = trim(fgets(STDIN));
-	echo"please enter MAX:".PHP_EOL;
+	echo"please enter MAX:";
 	$max = trim(fgets(STDIN));
-	echo"please enter INCREMENT:".PHP_EOL;
+	echo"please enter INCREMENT:";
 	$increment = trim(fgets(STDIN));
 
 }
