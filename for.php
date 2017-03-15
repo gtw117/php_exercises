@@ -1,14 +1,26 @@
 <?php
+echo "please ENTER 3 arguments, first = min, second = max, third = increment".PHP_EOL;
 
-$min = $argv[1];
-$max = $argv[2];
-$increment = $argv[3];
+if (isset($argv[1]) && isset($argv[2]) && isset($argv[3])){
+	$min = $argv[1];
+	$max = $argv[2];
+	$increment = $argv[3];
+} else {
+	echo"please enter MIN:".PHP_EOL;
+	$min = trim(fgets(STDIN));
+	echo"please enter MAX:".PHP_EOL;
+	$max = trim(fgets(STDIN));
+	echo"please enter INCREMENT:".PHP_EOL;
+	$increment = trim(fgets(STDIN));
+
+}
+
 
 //please enter 3 arguments, first = min, second = max, third = increment. 
 
-if (sizeof($argv) < 3){
-	echo "please RESTART and enter 3 arguments, first = min, second = max, third = increment. ".PHP_EOL;
-} 
+if (($argv) < 3){
+	echo "---> CONTINUE as prompted with a default increment of 1\n---> RESTART to enter 3 arguments, first = min, second = max, third = increment  ".PHP_EOL;
+}
 
 //if input is not a number do this...
 do {
@@ -26,10 +38,9 @@ do {
 	}
 } while (!is_numeric($min) || !is_numeric($max) || !is_numeric($increment));
 
-echo "min = $min and max = $max".PHP_EOL;
-
+echo "(MIN = $min) -- (MAX = $max) -- (INCREMENT = $increment)".PHP_EOL;
 
 
 for ($i= $min; $i<=$max; $i+=$increment){
-	echo "\$i has a value of {$i}\n";
+	echo "{$i}\n";
 }
