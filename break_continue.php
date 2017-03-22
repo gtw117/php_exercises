@@ -11,3 +11,11 @@ for ($i = 1; $i <= 100; $i++){
 	}
 	echo $i. "\n".PHP_EOL;
 }
+
+echo "The following stops after counting to 10".PHP_EOL;
+for ($k = 1; $k <= 100; $k++){
+	echo $k. "\n".PHP_EOL;
+	if ($k == 10){
+		break;
+	}
+}
