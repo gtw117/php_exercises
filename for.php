@@ -16,6 +16,13 @@ if(isset($argv[1]) && isset($argv[2]) && isset($argv[3])){
 	$increment = trim(fgets(STDIN));
 
 }
+//if max is less than min, swtich them
+if($max < $min){
+	$oldmax = $max;
+	$oldmin = $min;
+	$max = $oldmin;
+	$min = $oldmax;
+}
 
 if(($argv) < 3){
 	echo "---> CONTINUE as prompted with a default increment of 1\n---> RESTART to enter 3 arguments, first = min, second = max, third = increment  ".PHP_EOL;
@@ -29,16 +36,6 @@ if(empty($increment) || !is_numeric($increment)){
 //if increment is less than 0 or negative numbers, change to absolute value
 if($increment < 0){
 	$increment = abs($increment);
-}
-
-
-
-//if max is less than min, swtich them
-if($max < $min){
-	$oldmax = $max;
-	$oldmin = $min;
-	$max = $oldmin;
-	$min = $oldmax;
 }
 
 //if input is not a number do this...
