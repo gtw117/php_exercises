@@ -1,6 +1,5 @@
 <?php
 
-
 $books = array(
     'The Hobbit' => array(
         'published' => 1937,
