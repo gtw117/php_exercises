@@ -25,29 +25,17 @@ $books = array(
 );
 
 
-//1 .need to Construct a loop that iterates through each book and then each book's keys and values. Have it output the book's title, then list the key value pairs for the data about each book.
+// //1 .need to Construct a loop that iterates through each book and then each book's keys and values. Have it output the book's title, then list the key value pairs for the data about each book.
 
-//2.Update your loop to only show books that were written after 1950.
-
-
-
-
-
-
-
-
-
-
-
-$students = array(
-	array('name' => 'virginia potts', 'age' => 29),
-	array('name' => 'elon musk', 'age' => 42),
-	array('name' => 'rasmus lerdorf', 'age' => 45),
-	array('name' => 'marissa mayer', 'age' => 38)
-);
-
-foreach ($students as $student) {
-	foreach ($student as $key => $value) {
-		echo "Student's $key is $value \n";
+foreach ($books as $book){
+	foreach ($book as $key => $value){
+		echo "BOOK DATA: \n $key : $value".PHP_EOL;
 	}
 }
+
+// //2.Update your loop to only show books that were written after 1950.
+
+
+
+
+
