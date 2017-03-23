@@ -17,9 +17,10 @@ function multiply($a, $b)
 
 function divide($a, $b)
 {
-
+	return $a / $b .PHP_EOL;
 }
 
 echo add(9, 3);
 echo subtract(9, 3);
 echo multiply(9, 3);
+echo divide(9, 3);
