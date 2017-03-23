@@ -12,7 +12,7 @@ function subtract($a, $b)
 
 function multiply($a, $b)
 {
-
+	return $a * $b .PHP_EOL;
 }
 
 function divide($a, $b)
@@ -22,3 +22,4 @@ function divide($a, $b)
 
 echo add(9, 3);
 echo subtract(9, 3);
+echo multiply(9, 3);
