@@ -47,16 +47,26 @@ $companies = [
 
 
 ksort($companies);
-print_r($companies);
+
+foreach ($companies as $key=>$value){
+    asort($value);
+    print_r($value);
+}
+    
+
+
+
+
+
 
 /*
-wnload technology-companies.php to your exercises directory.
+///wnload technology-companies.php to your exercises directory.
 
-Add code to output the $companies array in its current form.
+///Add code to output the $companies array in its current form.
 
-Sort the $companies array by company name and output the results.
+///Sort the $companies array by company name and output the results.
 
-Sort the people in each company alphabetically. You will need to use a foreach loop and will need to reassign each inner array after sorting. Output the result.
+///Sort the people in each company alphabetically. You will need to use a foreach loop and will need to reassign each inner array after sorting. Output the result.
 
 Sort the companies from "biggest" to "smallest". This may be easier than you think, but be sure you don't loose the company names!*/
 
