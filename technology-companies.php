@@ -46,13 +46,14 @@ $companies = [
 ];
 
 
-ksort($companies);
+sort($companies);
 
-foreach ($companies as $key=>$value){
-    asort($value);
-    print_r($value);
+foreach ($companies as $company => $employee){
+    asort ($employee);
+    $companies[$company] = $employee;
 }
-    
+
+var_dump ($companies);
 
 
 
